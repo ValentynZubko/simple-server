@@ -8,4 +8,12 @@ app.get("/", (req, res) => {
 
 });
 
+app.get("/demo", (req, res) => {
+	
+	res.set("X-full-stack", "4life");
+	res.status(418);
+	res.send("Nope =)");
+
+});
+
 app.listen(port, () => console.log(`Server example on port ${port}`));
